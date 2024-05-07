@@ -161,6 +161,7 @@ main h1{
     font-family: 'pretty';
     font-size: 3em;
     font-weight: normal;
+    max-width: 550px;
 }
 
 picture .pequena {

@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'p';
+    src: url(../font/Light\ Stories.otf) format('opentype');
+}
+@font-face {
+    font-family: 'mqn';
+    src: url(../font/OldNewspaperTypes.ttf) format('truetype');  
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html,body{
+    min-width: 100vh;
+    background-color: darkgray;
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family:'mqn';
+    font-size: 10vw;
+}
+header p{
+    padding-bottom: 50px;
+}
+ header a, footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+ }
+header a:hover, footer a:hover{
+    text-decoration: underline;
+ }
+ section.normal{
+    background-color: white;
+    color: black;
+ }
+ section.img{
+    background-color:rgb(100, 19, 19);
+    color: white;
+    background-image: url(../imagens/background001.jpg);
+    background-position: center right;
+    background-attachment: fixed;
+    background-size: cover;
+ }
+ section.img > p {
+    background-color: rgba(0, 0, 0, 0.521);
+    width: 380px;
+ }
+ section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2.5em;
+    font-family: 'p';
+    padding-left: 30px;
+
+ }
+ footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 7px;
+ }

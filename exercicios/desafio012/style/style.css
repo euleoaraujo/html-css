@@ -62,7 +62,8 @@ header a:hover, footer a:hover{
  }
  section.img > p {
     background-color: rgba(0, 0, 0, 0.521);
-    width: 380px;
+    padding: 7px;
+    display: inline-block;
  }
  
  footer{

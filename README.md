@@ -2,6 +2,15 @@
   img{
    width:300px;
   }
+
+  a{
+   text-decoration: none;
+   color: #00002E;
+  }
+  a:hover{
+   text-decoration: underline;
+   color: black;
+  }
  </style>
 
 Meu Repositório ;p

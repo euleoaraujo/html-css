@@ -11,10 +11,12 @@
    text-decoration: underline;
    color: darkred;
   }
+  a:visited{
+   color: yellow;
+  }
  </style>
 
 Meu Repositório ;p <br>
-
 Abrir cada testes:) <br>
 <a href="https://euleoaraujo.github.io/html-css/exercicios/desafiocap16/android">Mascote Android </a>
 <br>

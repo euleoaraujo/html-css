@@ -5,11 +5,11 @@
 
   a{
    text-decoration: none;
-   color: 00002E;
+   color: black;
   }
   a:hover{
    text-decoration: underline;
-   color: black;
+   color: darkred;
   }
  </style>
 

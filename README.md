@@ -9,6 +9,7 @@ Abrir cada testes:) <br>
  <img src="https://static.ndmais.com.br/2021/02/antonio-macaco-prego-bc-6-691x800.jpg" alt="foto de mamaquinho"> 
  <style>
   img{
-   width: 300px;
+   width:300px;
+   height: 500px;
   }
  </style>

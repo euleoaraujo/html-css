@@ -11,8 +11,6 @@
    text-decoration: underline;
    color: darkred;
   }
-  
-  }
  </style>
 
 Meu Repositório ;p <br>

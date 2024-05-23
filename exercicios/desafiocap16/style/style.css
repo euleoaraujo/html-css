@@ -36,6 +36,10 @@
     src: url(../fontes/Bright\ Peony.otf) format('opentype');
 }
 
+/*
+Variaveis Css 
+*/
+
 :root{
     --cor0:#c5ebd6;
     --cor1:#83e1ad;
@@ -106,6 +110,7 @@ header > p{
     padding-right: 15px;
     padding-bottom: 45px;
     font-weight: normal;
+    text-aling: center;
 }
 
 

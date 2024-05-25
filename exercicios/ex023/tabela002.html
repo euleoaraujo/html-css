@@ -5,19 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
     <style>
+        @font-face {
+            font-family: 'coffe';
+            src: url(font/Coffee\ Normal.otf) format('opentype');
+        }
+        tbody >tr:nth-child(2n){ /*
+            
+            esta pseudoclasse serve para aplicar o efeito zebrado nas linhas de tabela usando o:
+            
+            :nth-child( aqui vai o número de linhas que quero colocar zebrado)
+            
+            exemplo:
+
+            tbody > tr:nth-chil(2n)
+            a cada duas linhas aplica-se o efeito zebrado
+
+            podemos usar tambem o 
+            "odd" = impar em ingles
+                        e
+            "even" = par em ingles
+
+            exemplo: 
+            
+            tbody > tr:nth-child(odd); para linhas impares
+            tbody > tr:nth-child(even); para linhas pares
+
+            */
+            background-color: lightslategray;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+            border-radius: 5px 5px 0px 0px;
+            box-shadow: 0px 0px 10px #0000008c;
+            
+        }
+        h1{
+            font-family: 'coffe';
+        }
         body{
             background-color: rgba(143, 167, 211, 0.61);
+            
         }
         table{
             width: 400px;
             border-collapse: collapse;
-            margin: auto; background-color: white;
+            background-color: white;
             box-shadow: 0px 0px 10px #0000008c;
+            position: relative;
+            margin: auto;
+            /*
+            para fixar o cabeçalho vamos na tabela e usamos o:
+            position: relative;
+
+            */
         }
+        thead >tr >th{
+            position: sticky;
+            /*na "celula" que eu quero usar usamos o:
+            position:sticky; (colavel ou grudar)
+            */
+            top: -1px;
+            /*isso aq para grudar em cima*/
+            background-color: gray;
+        }
+        
         h1{
             text-align: center;
-            padding-top: 20px;
-            padding-bottom: -10px;
         }
         td,th{
             border: 1px solid black;
@@ -30,18 +86,15 @@
         .num{
             text-align: right;
         }
-        .saopaulo{
-            background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Bandeira_do_estado_de_S%C3%A3o_Paulo.svg/800px-Bandeira_do_estado_de_S%C3%A3o_Paulo.svg.png);
-            background-position:left top;
-            background-size: cover;
-            
-        }
 
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
-    <!--anatomia para tabelas grandes
+    <!--
+        anatomia para tabelas grandes
+        CAPTION=(LEGENDA DA TABELA)
+        TABLE
         THEAD
             TR, TD, TH
         TBODY
@@ -50,15 +103,18 @@
             TR, TD, TH 
     -->
     <table>
+        <caption>
+            População das Unidades Federativas
+        </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td class="saopaulo">São Paulo</td>
+                <td>São Paulo</td>
                 <td class="num">45 919 049</td>
             </tr>
             <tr>
@@ -167,7 +223,7 @@
             </tr>
         </tbody>
         <tfoot>
-            <th>Total de Habitantes</th>
+            <th scope="row">Total de Habitantes</th>
             <td><strong>210.147.125</strong></td>
         </tfoot>
     </table>

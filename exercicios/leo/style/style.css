@@ -1,12 +1,18 @@
 @charset "UTF-8";
-
 *{
-    margin: 0px ;
+    margin: 0px;
     padding: 0px;
 }
 
+body{
+    background-color: #cab063e3;
+    
+}
+
 header{
-    background-color: red;
+    background-color: black;
+    box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.548);
+
 }
 
 header > h1{
@@ -23,4 +29,56 @@ header p{
     padding-top: 10px;
     padding-bottom: 50px;
     font-size: 2.3vw;
+}
+main{
+    background-color: white;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.555);
+    margin: auto;
+    height: 100vh;
+    max-width: 800px;
+    min-width: 320px;
+    border-radius: 0px 0px 20px 20px;
+    margin-bottom: 30px;
+   
+}
+main article{
+    padding: 18px;
+    text-align: justify;
+    text-indent: 18px;
+}
+main img{
+    margin: auto; 
+    width: 150px;
+   
+}
+.red{
+    display: inline-block;
+    margin-left: 100px;
+    margin-right: 100px;
+    border: 10px solid lightblue;
+    
+}
+.black{
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 100px;
+    margin-top: 50px;
+    border: 10px solid lightblue;
+}
+div.red{
+    text-align: center;
+    color: white;
+    background-color: lightblue; 
+    border-radius: 8px;
+}
+div.black{
+    text-align: center;
+    color: white;
+    background-color: lightblue;
+    border-radius: 8px;
+}
+div > p{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.438);
+    border-radius: 5px;
+   margin-top: 10px;
 }

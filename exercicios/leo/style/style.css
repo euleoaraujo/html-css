@@ -58,25 +58,15 @@ main img{
     border: 10px solid lightblue;
     
 }
-.black{
-    display: inline-block;
-    margin-left: 50px;
-    margin-right: 100px;
-    margin-top: 50px;
-    border: 10px solid lightblue;
-}
+
 div.red{
     text-align: center;
     color: rgb(0, 0, 0);
     background-color: lightblue; 
     border-radius: 8px;
 }
-div.black{
-    text-align: center;
-    color: rgb(0, 0, 0);
-    background-color: lightblue;
-    border-radius: 8px;
-}
+
+
 div > p{
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.438);
     border-radius: 5px;

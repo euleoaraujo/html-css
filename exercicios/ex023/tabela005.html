@@ -5,29 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Exercicios de Tabelas</title>
     <style>
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 7px;
+        }
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
         table{
             width: 500px;
-            border-collapse: ;;
+            border-collapse: collapse;
+        }
+        td,th{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        .csexo{
+            background-image: linear-gradient( to bottom, yellow, red);
+        }
+        .cprof{
+            background-image: linear-gradient(to top, green, blue);
+        }
+        .c42{
+            background-color: crimson;
         }
     </style>
 </head>
 <body>
     <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+            <col class="cdata">
+        </colgroup>
+        <h1>Exercício de Tabela</h1>
         <caption>Cadrastro</caption>
         <tr>
-            <th>Nome</th>
-            <th>Sexo</th>
-            <th>Idade</th>
-            <th>Profissão</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+            <th scope="col">Data de Nascimento</th>
         <tr>
             <td>Ana Maria</td>
             <td>F</td>
             <td>25</td>
-            <td>JOrnalista</td>
+            <td>Jornalista</td>
+            <td>11/05/1895</td>
         </tr>
+        <tr>
+            <td>Cláudio</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Programador</td>
+            <td>11/05/1895</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>42</td>
+            <td>Professor</td>
+            <td>11/05/1895</td>
+        </tr>
+        <tr>
+            <td>Hélio</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Vendedor</td>
+            <td>11/05/1895</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>39</td>
+            <td>Médica</td>
+            <td>11/05/1895</td>
+        </tr>
+        <tr>
+            <td>Otávio</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Nutricionista</td>
+            <td>11/05/1895</td>
         </tr>
     </table>
 </body>

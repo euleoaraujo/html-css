@@ -27,23 +27,37 @@
         .cadras{
             padding-top: 0px;
         }
+        .butt{
+            background-color: transparent;
+            border-radius: 4px;
+            box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.63);
+            border: none;
+        }
+        .box{
+            background-color: transparent;
+            border-radius: 4px;
+            box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.63);
+            border: none;
+            text-align: center;
+            color: whitesmoke;
+        }
     </style>
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form action="cadastro.php" autocomplete="off">
+    <form action="https://robsonpiresxerife.com/wp-content/uploads/2010/06/macaco-dando-o-dedo-hoje.jpg"  method="post" autocomplete="on">
         <p>
             <label for="inome">Nome:</label>
-            <input type="text" name="Nome" id="inome">
+            <input type="text" name="Nome" id="inome" class="box">
         </p>
         <p>
             <label for="isobrenome">Sobrenome:</label>
-            <input type="text" name="Sobrenome id="isobrenome">
+            <input type="text" name="Sobrenome" id="isobrenome" class="box">
         </p>
         <p><label for="iidade">Idade:</label>
-            <input type="text" name="idade" id="iidade">
+            <input type="text" name="idade" id="iidade" class="box">
         </p>
-        <p class="cadras"><input type="submit" value="Cadrastar">
+        <p class="cadras"><input type="submit" value="Cadrastar" class="butt">
         </p>
     </form>
 

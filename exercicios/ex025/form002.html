@@ -4,8 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: black;
+        }
+        form{
+            background-color: lightpink;
+            margin: auto;
+            width: 35vw;
+            margin-top: 35vh;
+            padding: 35px;
+            border-radius: 25px;
+
+        }
+        .bot{
+          margin: 5px;
+        }
+        .text{
+            margin: 10px;
+        }
+        p{
+            text-align: center;
+            margin: 0px;
+        }
+    </style>
 </head>
 <body>
-    
+<form action="cadastro.php" method="post">
+    <p>
+        <label for="iusu">Usuário:</label>
+        <input type="text" name="usu" id="iusu" required minlength="5" maxlength="10" class="text">
+    </p>
+    <p>
+        <label for="isen">Senha:</label>
+        <input type="password" name="sen" id="isen" required minlength="4" maxlength="10" class="text">
+    </p>
+    <p>
+        <input type="submit" value="Enviar" class="bot">
+        <input type="reset" value="Limpar" class="bot">
+    </p>
+
+
+</form>
 </body>
-</html>
+</html> 

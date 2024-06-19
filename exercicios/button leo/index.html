@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>papo de div</title>
+    <style>
+
+        @font-face {
+            font-family: leo;
+            src: url(font/Minggola.ttf) format('truetype');
+        }
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'leo';
+        }
+        body{
+            background-color: white;
+        }
+
+        .button input {
+            background-color: #ffffff;
+            color: white;
+            width: 200px;
+            height: 100px;
+            /*ASSIM QUE CENTRALIZA UMA DIV LEOOOO*/
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.132);
+            border: none;
+        }
+        :hover > .button input{
+            width: 208px;
+            height: 108px;
+            transition-duration: 0.3s;
+
+        }
+        .text{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+           
+        }
+        p{
+            text-align: center;
+        }
+        .click{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="button">
+        <form action="https://i.pinimg.com/736x/e0/2b/1f/e02b1fc915a43c1d0ebdd907ee7cb7e7.jpg">
+            <input type="submit" value="b">
+        </form>
+    </div>
+    <div class="text"> 
+        <p>
+            Nome: Leandro Araujo
+        </p>
+        <p>
+            Idade: 17 Anos
+        </p>
+        <p>
+            Sexo: Masculino
+        </p>
+    </div>
+</body>
+</html>

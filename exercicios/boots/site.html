@@ -16,11 +16,22 @@
 
         <link rel="shortcut icon" href="" type="image/x-icon">
         <title>Suply</title>
+        <style>
+            .poppins-regular {
+                font-family: "Poppins", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+            #ico{
+                font-size: 2em;
+            }
+
+        </style>
     </head>
 
-    <body>
+    <body class="poppins-regular">
             <!--MENU PRINCIPAL-->
-            <nav class="navbar navbar-expand-lg navbar-light" style="height: 75px;">
+            <nav class="navbar navbar-expand-lg navbar-light mb-5" style="height: 75px;">
   <div class="container">
     <a class="navbar-brand text-primary" href="#"><strong>Suply.</strong></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,13 +63,13 @@
     </div>
   </div>
 </nav>
-    <header class="container my-4">
+    <header class="container my-5">
         <div class="row">
             <div class="col-12 col-lg-6">
-                <h1 class="text-start">Bem vindo a <span class="text-primary">Suply.</span><br>aqui desenvolvemos sites usando poucos cliques com o Bootstrap.</h1>
-                <p class="lead text-center text-md-start text-muted mb-6 mb-lg-8">Nossa empresa fabrica sites modernos utilizando o poderoso framework Bootstrap. Para mais informações clique em saiba mais.</p>
+                <h1 class="display-4 text-center text-md-start mt-5">Bem vindo a <span class="text-primary">Suply.</span><br>Desenvolva  oque quiser.</h1>
+                <p class="lead text-center text-md-start text-muted mb-6 mb-lg-8">Construa um site bonito e moderno com componentes flexíveis do Bootstrap construidos do zero</p>
 
-                <div class="mt-5">
+                <div class="mt-4 text-center text-md-start">
                     <button class="btn btn-primary btn-lg">
                         Saiba mais 
                         <i class="bi bi-arrow-right-short"></i>
@@ -69,11 +80,46 @@
                 </div>
             </div>
             <div class="col-12 col-lg-6">
-                <img src="photo/img.png" class="height-500px height-sm-350px" height="500px" alt="">
+                <img src="photo/img.png" class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0 aos-init aos-animate" alt="..." data-aos="fade-up" data-aos-delay="100">
             </div>
         </div>
     </header>
-        <!-- Bootstrap JavaScript Libraries -->
+
+    <main>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-12 col-md-4 mb-5 aos-init aos-animate" data-aos="fade-up">
+                <div class="card border-0">
+                    <i id="ico" class="bi bi-toggles text-primary ms-3"></i>
+                    <div class="card-body">
+                      <h5 class="card-title">Clientes</h5>
+                      <p class="card-text">Conheça nossos principais clientes que apostaram na nossa empresa.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-12 col-md-4 mb-5">
+                <div class="card border-0">
+                    <i id="ico" class="bi bi-basket-fill text-primary ms-3"></i>
+                    <div class="card-body">
+                      <h5 class="card-title">Compra</h5>
+                      <p class="card-text">Você decide o estilo do site e compra pelo menor valor do mercado</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-12 col-md-4 mb-5">
+                <div class="card border-0">
+                    <i id="ico" class="bi bi-cloud-fill text-primary ms-3"></i>
+                    <div class="card-body">
+                      <h5 class="card-title">Servidores</h5>
+                      <p class="card-text">Fique conosco e hospede seu site com segurança e qualidade na <span class="text-primary">Suply.</span></p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        
+    </div>
+        
+    </main>
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
